@@ -9,9 +9,9 @@ exit /b 0
 :WEITER
 IF NOT EXIST "C:\Program Files (x86)\Dameware Remote Everywhere Agent" GOTO INSTALL
 
-msiexec /uninstall \\dennert.local\NETLOGON\DRE_Agent\DamewareAgent.msi /qn
+msiexec /uninstall \\yourdomain\NETLOGON\DRE_Agent\DamewareAgent.msi /qn
 rmdir /s /q  "C:\Program Files (x86)\Dameware Remote Everywhere Agent"
 
 
 :INSTALL
-msiexec /i \\dennert.local\NETLOGON\DRE_Agent\DamewareAgent.msi /qn
+msiexec /i \\yourdomain\NETLOGON\DRE_Agent\DamewareAgent.msi /qn
